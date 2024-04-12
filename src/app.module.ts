@@ -7,6 +7,7 @@ import { AdvertisementsModule } from './practices/advertisements.module';
 import { AuthModule } from './auth/auth.module';
 import { CommonModule } from './common/common.module';
 import { AdminModule } from './admin/admin.module';
+import { AgoraModule } from './agora/agora.module';
 
 
 @Module({
@@ -16,7 +17,8 @@ import { AdminModule } from './admin/admin.module';
     UsersModule,
     AuthModule,
     CommonModule,
-    AdminModule
+    AdminModule,
+    AgoraModule
   ],
   controllers: [AppController],
   providers: [AppService],
