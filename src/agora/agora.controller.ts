@@ -2,7 +2,9 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { AgoraService } from './agora.service';
 import { CreateVideoAgoraDto } from './dto/create-agora.dto';
 import { UpdateAgoraDto } from './dto/update-agora.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags("Agora")
 @Controller('agora')
 export class AgoraController {
   constructor(private readonly agoraService: AgoraService) {}
